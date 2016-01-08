@@ -1,0 +1,5 @@
+web:
+  image: brunogasparin/feng-huang-site:latest
+
+db:
+  image: postgres:9.4

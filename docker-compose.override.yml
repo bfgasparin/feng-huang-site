@@ -1,0 +1,10 @@
+web:
+  build: .
+  volumes:
+    - '.:/var/www/html'
+  ports:
+    - 8081:80
+
+db:
+  ports:
+    - 5432:5432
