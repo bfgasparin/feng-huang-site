@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace FengHaung\Jobs;
 
 use Illuminate\Bus\Queueable;
 

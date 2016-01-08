@@ -151,10 +151,10 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        FengHaung\Providers\AppServiceProvider::class,
+        FengHaung\Providers\AuthServiceProvider::class,
+        FengHaung\Providers\EventServiceProvider::class,
+        FengHaung\Providers\RouteServiceProvider::class,
 
     ],
 

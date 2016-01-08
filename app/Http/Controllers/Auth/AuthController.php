@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace FengHaung\Http\Controllers\Auth;
 
-use App\User;
+use FengHaung\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use FengHaung\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

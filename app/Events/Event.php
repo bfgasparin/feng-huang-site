@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace FengHaung\Events;
 
 abstract class Event
 {
