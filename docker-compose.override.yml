@@ -8,3 +8,8 @@ web:
 db:
   ports:
     - 5432:5432
+
+node:
+  image: node:5.3
+  volumes_from: 
+    - web
