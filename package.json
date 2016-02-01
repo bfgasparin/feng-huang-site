@@ -8,5 +8,9 @@
     "bootstrap": "^4.0.0-alpha.2",
     "jquery": "^2.1.4",
     "laravel-elixir": "^4.0.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "gulp watch"
   }
 }

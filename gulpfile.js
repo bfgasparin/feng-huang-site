@@ -15,4 +15,8 @@ elixir(function(mix) {
     mix.sass('app.scss')
     mix.browserify('app.js');
     mix.version(['css/app.css', 'js/app.js']);
+
+    mix.browserSync({
+        proxy: 'fenghuangsite_web_1'
+    });
 });

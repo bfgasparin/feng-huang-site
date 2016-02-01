@@ -10,6 +10,11 @@ db:
     - 5432:5432
 
 node:
-  image: node:5.3
+  image: node:5.5-onbuild
+  working_dir: /var/www/html
+  ports:
+    - 3000:3000
+    - 3001:3001
+
   volumes_from: 
     - web
