@@ -1,20 +1,26 @@
-web:
-  build: .
-  volumes:
-    - '.:/var/www/html'
-  ports:
-    - 8081:80
+version: '2'
 
-db:
-  ports:
-    - 5432:5432
+services:
+  web:
+    build: 
+      context: .
+    volumes:
+      - '.:/var/www/html'
+    ports:
+      - 8081:80
 
-node:
-  image: node:5.5-onbuild
-  working_dir: /var/www/html
-  ports:
-    - 3000:3000
-    - 3001:3001
+  db:
+    ports:
+      - 5432:5432
 
-  volumes_from: 
-    - web
+  node:
+    image: node:5.5-onbuild
+    working_dir: /var/www/html
+    ports:
+      - 3000:3000
+      - 3001:3001
+    volumes_from: 
+      - web
+    networks:
+      - front-tier  
+

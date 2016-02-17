@@ -1,5 +1,18 @@
-web:
-  image: brunogasparin/feng-huang-site:latest
+version: '2'
 
-db:
-  image: postgres:9.4
+services:
+  web:
+    image: brunogasparin/feng-huang-site:latest
+    links:
+      -db
+    networks:
+      - back-tier
+      - front-tier  
+  db:
+    image: postgres:9.4
+    networks:
+      - back-tier
+
+networks:
+  front-tier:
+  back-tier:
