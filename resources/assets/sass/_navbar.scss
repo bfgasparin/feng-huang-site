@@ -1,0 +1,18 @@
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar-dark .nav-item .nav-link {
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+    border-bottom-color: $navbar-dark-color;
+    padding-bottom: 0.15rem;
+}
+
+.navbar-dark .nav-item .nav-link:hover,
+.navbar-dark .nav-item .nav-link:focus {
+    border-bottom-color: $navbar-dark-hover-color;
+}
+
+.navbar-dark .nav-item .active {
+    border-bottom-color: $navbar-dark-active-color;
+}  

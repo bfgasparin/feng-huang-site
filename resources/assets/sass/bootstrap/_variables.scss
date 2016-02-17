@@ -1,0 +1,26 @@
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex:               true;
+$enable-shadows:            true;
+
+$brand-primary:               rgba(224,54,54,1);
+$brand-info:                  #AFB128;
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-lighter:             #ECECEC;
+$gray-lightest:            #F5F5F5;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-info-color:            #fff;
+$btn-info-bg:               $brand-info;
+$btn-info-border:           #E5E6A9;
+
+$enable-flex: true;

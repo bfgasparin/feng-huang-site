@@ -1,0 +1,12 @@
+/* CUSTOMIZE THE TYPOGRAPHY
+-------------------------------------------------- */
+
+@include media-breakpoint-down(sm) {
+  html {
+    font-size: 14px;
+  }
+
+  .carousel .carousel-item .carousel-caption .blockquote > h1{
+    font-size: $font-size-h3;
+  }
+}

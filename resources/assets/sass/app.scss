@@ -1,2 +1,19 @@
+
+@import "variables";
+
+// Import bootstrap source
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
+// Core CSS
+@import "modality";
+@import "footer";
+
+// Components w/ JavaScript
+@import "carousel";
+
+// Components
+@import "navbar";
+
+// Utility classes
+@import "typography";
