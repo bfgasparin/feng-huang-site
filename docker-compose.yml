@@ -4,7 +4,7 @@ services:
   web:
     image: brunogasparin/feng-huang-site:latest
     links:
-      -db
+      - db
     networks:
       - back-tier
       - front-tier  
