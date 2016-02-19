@@ -5,3 +5,35 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+.main-footer .social-icons {
+  padding-top: 1rem;
+
+}
+
+.main-footer .fa {
+    margin-right: 1rem;
+}
+
+.main-footer p {
+    margin-bottom: 0rem;
+}
+
+@include media-breakpoint-down(xs) {
+
+   .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+  .main-footer {
+      @include center-block;
+      text-align:  center;
+      padding-bottom: 0rem;
+   }
+
+   .main-footer .main-footer-item{
+        padding-bottom: 3rem;
+   }
+}
