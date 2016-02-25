@@ -1,24 +1,7 @@
-/* CUSTOMIZE FOOTER
+/* CUSTOMIZE THE FOOTER
 -------------------------------------------------- */
 
-.main-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.main-footer .social-icons {
-  padding-top: 1rem;
-
-}
-
-.main-footer .fa {
-    margin-right: 1rem;
-}
-
-.main-footer p {
-    margin-bottom: 0rem;
-}
-
+// FhFooter
 @include media-breakpoint-down(xs) {
 
    .center-block {
@@ -33,6 +16,10 @@
       padding-bottom: 0rem;
    }
 
+  .main-footer .row {
+      @include center-block;
+   }
+   
    .main-footer .main-footer-item{
         padding-bottom: 3rem;
    }
