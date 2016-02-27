@@ -1,45 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.app')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@section('content')
+  <div class="m-b-0">
+    <fh-citations :list="citations"></fh-citations>
+  </div>  
+  
+    <!-- Modality appresentations
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
-</html>
+    <div class="jumbotron jumbotron-fluid m-b-0 bg-primary">
+      <div class="container">
+        <h1>{{ trans('core.institute') }}</h1>
+        <p class="lead">Representante oficial de Wudang Kung Fu na América Latina.</p>
+      </div>
+    </div>
+    <div class="container-fluid modality p-t-2">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ asset('images/wudang-kung-fu.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>{{ trans('modality.wudang') }}</h2>
+          <p>{{ trans('modality.wudang-summary') }}</p>
+          <p><a class="btn btn-info" href="#" role="button">{{ trans('core.view-details') }} &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ asset('images/shaolin-kung-fu.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>{{ trans('modality.shaolin') }}</h2>
+          <p>{{ trans('modality.shaolin-summary') }}</p>
+          <p><a class="btn btn-info" href="#" role="button">{{ trans('core.view-details') }} &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ asset('images/meditation.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>{{ trans('modality.meditation') }}</h2>
+          <p>{{ trans('modality.meditation-summary') }}</p>
+          <p><a class="btn btn-info" href="#" role="button">{{ trans('core.view-details') }} &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div> <!-- /container -->
+@endsection
