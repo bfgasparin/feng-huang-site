@@ -8,6 +8,8 @@ The site is developed using [Laravel Framework][1].
 
 The template map structure is constructed using blade.
 
+Frontend components are constructed using [Vue.js][2].
+
 [Bootstrap 4][3] Framework is used to helps with layout pages.
 
 I do not created a separated project for the frontend to make the 
@@ -38,6 +40,7 @@ All dependencies are managed by node.
 
 
 [1]: https://laravel.com
+[2]: http://vuejs.org
 [3]: http://v4-alpha.getbootstrap.com/
 [4]: http://gulpjs.com
 [5]: https://github.com/laravel/elixir
