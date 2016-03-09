@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'landingPage', function () {
+	$modalities = factory(FengHaung\Modality::class, 5)->make();
+	$currentView = 'FhWelcome';
+
+    return view('welcome', compact('modalities', 'currentView'));
+}]);
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +30,7 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
 });
