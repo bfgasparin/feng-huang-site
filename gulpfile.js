@@ -17,7 +17,8 @@ elixir(function(mix) {
     mix.copy('node_modules/font-awesome/fonts', 'public/build/fonts');
     mix.sass('app.scss')
     mix.browserify('app.js');
-    mix.version(['css/app.css', 'js/app.js']);
+    mix.browserify('welcome/vue.js', 'public/js/welcome.js');
+    mix.version(['css/app.css', 'js/app.js', 'js/welcome.js']);
 
     mix.browserSync({
         proxy: 'web'
