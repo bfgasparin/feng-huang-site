@@ -7,9 +7,8 @@ RUN apt-get update && apt-get install -y \
         && rm -rf /var/lib/apt/lists/*
 
 # Install postgres php extension
-# RUN docker-php-ext-install \
-#        pdo_pgsql \
-#        pgsql
+RUN docker-php-ext-install \
+        pdo_pgsql 
 
 # Configure php
 COPY resources/docker/images/php/conf.d/timezone.ini $PHP_INI_DIR/conf.d/  
