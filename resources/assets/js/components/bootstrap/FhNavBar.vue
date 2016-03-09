@@ -5,7 +5,7 @@
           &#9776;
         </button>
         <div class="collapse nav-inline navbar-toggleable-xs" id="navbar-header">
-          <a class="navbar-brand hidden hidden-xs-down" href="/#">
+          <a class="navbar-brand hidden hidden-xs-down" href="/">
               <img :src="logo" alt="{{ title }}" style="width: 4rem;">
           </a>
           <a class="navbar-brand hidden hidden-lg-down p-t-1" href="/#"><h1>{{ title }}</h1></a>
