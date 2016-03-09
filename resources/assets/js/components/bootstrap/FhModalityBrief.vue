@@ -2,13 +2,14 @@
     <img class="img-circle" :src="imageUrl" alt="name" width="140" height="140">
     <h2>{{ name }}</h2>
     <p>{{ summary }}</p>
-    <p><a class="btn btn-info" href="#" role="button">Veja mais &raquo;</a></p>
+    {{ data }}
+    <p><a class="btn btn-info" href="#" role="button"> {{ buttonText }} &raquo; </a></p>
 </template> 
 
 <script>
 
 export default {
-    props: ['imageUrl', 'name', 'summary']
+    props: ['imageUrl', 'name', 'summary', 'buttonText']
 }
 
 </script>

@@ -17,15 +17,5 @@ import FhNavBarItem from './components/bootstrap/FhNavBarItem.vue';
 new Vue ({
     el: 'body',
 
-    data: {
-        items: [
-            {current: true, name: 'Home'},
-            {current: true, name: 'O Mestre'},
-            {current: true, name: 'Modalidade'},
-            {current: true, name: 'Contato'},
-            {current: true, name: 'Teste'}
-        ],
-    },
-
     components: { FhFooter, FhSocialIconList, FhSocialIconItem, FhTelephone, FhEmail, FhNavBar, FhNavBarItem},
 })

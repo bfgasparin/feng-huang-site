@@ -2,7 +2,7 @@
     <div class="modality">
         <div class="row">
             <div v-for="modality in list" class="col-lg-4 center-block">
-                <fh-modality-brief :image-url="modality.imageUrl" :name="modality.name" :summary="modality.summary">
+                <fh-modality-brief :image-url="modality.imageUrl" :name="modality.name" :summary="modality.summary" :button-text="buttonText">
             </div>
         </div>
     </div>
@@ -18,12 +18,12 @@ export default {
         FhModalityBrief
     },
 
-    props: {
-        'list': {
-            type: Array,
-            required: true
-        }
+    props: ['list', 'buttonText'],
+
+    created() {
+        this.list = JSON.parse(this.list);
     }
+
 }
 
 </script>
