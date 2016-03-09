@@ -20,7 +20,7 @@ All dependencies are managed by node.
 [Gulp][4] + [Elixir][5] is used to make Frontend automated tasks for automation workflow.
 
 @todo tell about browserify
-@todo refactory frontend to follow [Vuex] Architecture (https://github.com/vuejs/vuex)
+@todo study if there is necessity to refactory frontend to follow [Vuex] Architecture (https://github.com/vuejs/vuex)
 
 ## Internationalization
 
