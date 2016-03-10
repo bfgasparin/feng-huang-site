@@ -4,7 +4,7 @@ window.$ = window.jQuery = require('jquery')
 
 require('bootstrap');
 
-var Vue = require('vue');
+import Vue from 'vue';
 
 import FhFooter from './components/bootstrap/FhFooter.vue';
 import FhSocialIconList from './components/social/font-awesome/FhSocialIconList.vue';
