@@ -11,12 +11,11 @@
 |
 */
 
-Route::get('/', ['as' => 'landingPage', function () {
-	$modalities = factory(FengHaung\Modality::class, 5)->make();
-	$currentView = 'FhWelcome';
+Route::get('/', function () {
+	$modalities = FengHaung\Modality::all();
 
-    return view('welcome', compact('modalities', 'currentView'));
-}]);
+    return view('welcome', compact('modalities'));
+});
 
 /*
 |--------------------------------------------------------------------------
