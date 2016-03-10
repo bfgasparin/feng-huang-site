@@ -10,5 +10,11 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-install \
         pdo_pgsql 
 
+# Install Image manipulation Dependencies
+RUN docker-php-ext-install \
+        fileinfo \
+        gd
+ 
+
 # Configure php
 COPY resources/docker/images/php/conf.d/timezone.ini $PHP_INI_DIR/conf.d/  
