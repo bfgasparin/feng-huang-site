@@ -11,13 +11,13 @@
 </head>
 
 <body id="app-layout">
-    <fh-nav-bar title="{{ trans('core.institute') }}" logo="{{asset('images/logo.png')}}">
-        <fh-nav-bar-item active url="/">{{ trans('menu.home') }} <span class="sr-only">(current)</span></fh-nav-bar-item>
-        <fh-nav-bar-item url="#">{{ trans('menu.the-master') }}</fh-nav-bar-item>
-        <fh-nav-bar-item url="#">{{ trans('menu.modalities') }}</fh-nav-bar-item>
-        <fh-nav-bar-item url="#">{{ trans('menu.news') }}</fh-nav-bar-item>
-        <fh-nav-bar-item url="#">{{ trans('menu.contact') }}</fh-nav-bar-item>
-    </fh-nav-bar>
+    <fh-menu title="{{ trans('core.institute') }}" logo="{{asset('images/logo.png')}}">
+        <fh-menu-item active url="/">{{ trans('menu.home') }} <span class="sr-only">(current)</span></fh-menu-item>
+        <fh-menu-item url="#">{{ trans('menu.the-master') }}</fh-menu-item>
+        <fh-menu-item url="#">{{ trans('menu.modalities') }}</fh-menu-item>
+        <fh-menu-item url="#">{{ trans('menu.news') }}</fh-menu-item>
+        <fh-menu-item url="#">{{ trans('menu.contact') }}</fh-menu-item>
+    </fh-menu>
     
     <component is="{{ $vueView }}" inline-template>
         <!-- the vueView component will not be cached! -->
