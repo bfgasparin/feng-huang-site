@@ -29,8 +29,6 @@ All dependencies are managed by node.
 ## Docker
 
 	@todo Write about docker support, images and containers for this project
-	@todo segregates docker configuration from this repository (Dockerfile, Docker Compose) 
-
 
 ## Todo
 
