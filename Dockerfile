@@ -61,3 +61,8 @@ RUN node_modules/.bin/gulp --production
 RUN rm /usr/local/bin/node \
 	&& rm /usr/local/bin/npm \
 	&& rm -R /usr/local/node
+	
+RUN apt-get remove -y \
+        xz-utils \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
