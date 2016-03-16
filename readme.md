@@ -36,7 +36,7 @@ All dependencies are managed by node.
 - Write Functional Tests ([Integrated][7])
 - Write Acceptance Tests ([Integrated][7])
 - Refactory Tests to use [Codeception](http://codeception.com/)
-
+- Refactory Frontend to use Material Design (with [MaterializeCSS][8])
 
 [1]: https://laravel.com
 [2]: http://vuejs.org
@@ -44,3 +44,4 @@ All dependencies are managed by node.
 [4]: http://gulpjs.com
 [5]: https://github.com/laravel/elixir
 [7]: https://github.com/laracasts/Integrated
+[8]: http://materializecss.com
