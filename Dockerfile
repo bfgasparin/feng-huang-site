@@ -3,7 +3,7 @@ FROM brunogasparin/laravel-apache:5-onbuild
 # Install postgres libraries and php extension
 RUN apt-get update && apt-get install -y \
         libpq-dev \
-    && docker-php-ext-install pdo_pgsql    
+    && docker-php-ext-install pdo_pgsql \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
         libjpeg-dev \
     && docker-php-ext-install fileinfo \
     && docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ \
-    && docker-php-ext-install gd
+    && docker-php-ext-install gd \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
  
