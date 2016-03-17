@@ -22,6 +22,21 @@ All dependencies are managed by node.
 @todo tell about browserify
 @todo study if there is necessity to refactory frontend to follow [Vuex] Architecture (https://github.com/vuejs/vuex)
 
+
+## Backend
+
+The backend is construced under [Laravel Framework][1].
+
+@todo Say more about the application
+
+### Uploaded files
+
+Uploaded files are stored at `storage/uploads` directory. 
+
+All images are managed and cached by [Intervention Image Library][9]. Uploaded images are saved at `storage/uploads/images`. 
+and can be retrieved by `http://<host-ip>/images\cached\<template>/<image-name>. See `config/imagecache.php` config file for 
+more details.
+
 ## Internationalization
 
 @todo
@@ -45,3 +60,4 @@ All dependencies are managed by node.
 [5]: https://github.com/laravel/elixir
 [7]: https://github.com/laracasts/Integrated
 [8]: http://materializecss.com
+[9]: http://image.intervention.io/

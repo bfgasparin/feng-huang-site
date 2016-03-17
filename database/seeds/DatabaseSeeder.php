@@ -2,6 +2,10 @@
 
 use Illuminate\Database\Seeder;
 
+/**
+ * Seeder for application
+ * @author Bruno Gasparin <bfgasparin@gmail.com>
+ */
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -12,5 +16,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserTableSeeder::class);
+        $this->call(ModalityTableSeeder::class);
     }
 }

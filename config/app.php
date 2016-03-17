@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -155,7 +155,11 @@ return [
         FengHaung\Providers\AuthServiceProvider::class,
         FengHaung\Providers\EventServiceProvider::class,
         FengHaung\Providers\RouteServiceProvider::class,
-
+        /**
+         * Vendors Service Providers
+         */
+        Dimsav\Translatable\TranslatableServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
     ],
 
     /*
@@ -201,7 +205,10 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-
+        /**
+         * Vendors Aliases
+         */
+        'Image' => Intervention\Image\Facades\Image::class,
     ],
 
 ];
