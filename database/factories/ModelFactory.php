@@ -22,6 +22,7 @@ $factory->define(FengHaung\User::class, function (Faker\Generator $faker) {
 
 $factory->define(FengHaung\Modality::class, function (Faker\Generator $faker) {
     $name = [
+        // ['English Name Transation', 'Portuguese Name Transalation']
         ['Wing Chun', 'Wing Chun'], 
         ['Wudang Kung Fu', 'Kung Fu Wudang'],
         ['Shaolin Kung Fu', 'Kung Fu Shaolin'], 
