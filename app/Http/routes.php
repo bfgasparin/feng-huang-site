@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
+	$citations = FengHaung\Citation::all();
 	$modalities = FengHaung\Modality::all();
-
-    return view('welcome', compact('modalities'));
+	
+    return view('welcome', compact('modalities', 'citations'));
 });
 
 /*

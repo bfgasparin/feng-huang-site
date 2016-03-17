@@ -18,7 +18,14 @@ export default {
         FhModalityBrief
     },
 
-    props: ['list', 'buttonText'],
+    props: {
+        'list': {
+            required: true
+        },
+        'buttonText' : {
+            required: true
+        }
+    },
 
     created() {
         this.list = JSON.parse(this.list);

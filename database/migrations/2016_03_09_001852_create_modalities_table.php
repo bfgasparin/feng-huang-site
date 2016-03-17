@@ -24,7 +24,7 @@ class CreateModalitiesTable extends Migration
             $table->increments('id');
             $table->integer('modality_id')->unsigned();
             $table->string('name');
-            $table->string('summary');
+            $table->text('summary');
             $table->string('locale')->index();
 
             $table->unique(['modality_id','locale']);

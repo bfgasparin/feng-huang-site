@@ -32,7 +32,7 @@ $factory->define(FengHaung\Modality::class, function (Faker\Generator $faker) {
     $imagePath = $faker->image(storage_path().'/uploads/images', 400, 400, 'sports');
 
     return [
-        'imageUrl' => 'images/cached/original/'.substr($imagePath, strpos($imagePath, '/images')+7),
+        'imageUrl' => 'images/cached/original/'.substr($imagePath, strpos($imagePath, '/images')+8),
         'en' => [
             'name' => $faker->randomElement($name)[0],
             'summary' => $faker->paragraph(2)
@@ -40,6 +40,22 @@ $factory->define(FengHaung\Modality::class, function (Faker\Generator $faker) {
         'pt-BR' => [
             'name' => $faker->randomElement($name)[1],
             'summary' => $faker->paragraph(2)
+        ],
+    ];
+});
+
+$factory->define(FengHaung\Citation::class, function (Faker\Generator $faker) {
+
+    $imagePath = $faker->image(storage_path().'/uploads/images', 1920, 1280, 'nature');
+
+    return [
+        'imageUrl' => 'images/cached/original/'.substr($imagePath, strpos($imagePath, '/images')+8),
+        'first' => $faker->boolean,
+        'en' => [
+            'content' => $faker->paragraph
+        ],
+        'pt-BR' => [
+            'content' => $faker->paragraph
         ],
     ];
 });

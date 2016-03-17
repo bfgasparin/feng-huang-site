@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app', ['vueView' => 'fh-welcome-view'])
 
 @section('content')
-    <fh-citations class="m-b-0" :list="citations"></fh-citations>
+    <fh-citations class="m-b-0" list="{{ $citations }}"></fh-citations>
   
     <fh-full-painel class="m-b-0">
 		<h1>{{ trans('core.institute') }}</h1>

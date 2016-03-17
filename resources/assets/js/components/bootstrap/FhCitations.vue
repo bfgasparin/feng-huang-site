@@ -36,7 +36,6 @@ export default {
 
     props: {
         'list': {
-            type: Array,
             required: true
         }
     },
@@ -45,6 +44,11 @@ export default {
             'position_classes': ['text-xs-left', '', 'text-xs-right']
         }
     },
+
+    created() {
+        this.list = JSON.parse(this.list);
+    },
+
     'methods': {
         position: function(index) {
             return this.position_classes[index % this.position_classes.length ];
